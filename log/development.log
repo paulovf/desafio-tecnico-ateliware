@@ -9775,3 +9775,341 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 231ms (Views: 229.0ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 10.0.0.97 at 2021-04-25 19:09:36 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (59.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (12765.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered index/index.html.erb within layouts/application (12805.5ms)
+Completed 200 OK in 13500ms (Views: 13475.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:12:22 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (84.5ms)
+Completed 200 OK in 414ms (Views: 300.9ms | ActiveRecord: 74.4ms)
+
+
+Started POST "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:12:24 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1goSzaJObs-xjp7_L9gLVX8d5vt2jcssYCY3fWtK25TYrmSfOhU6Wb1TLWW4pXXU-C1ZLawWAv19sSlRw-zXoA", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1goSzaJObs-xjp7_L9gLVX8d5vt2jcssYCY3fWtK25TYrmSfOhU6Wb1TLWW4pXXU-C1ZLawWAv19sSlRw-zXoA", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 207ms (Views: 206.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:13:58 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 208ms (Views: 207.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:14:01 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8SrRySkyMJwiR_Vu_DKLZOCXkQZW0sUVck2NtEP4UgjCrHIHF65CU5iO3aOByoZoU6uDD4N5uuh5V0--RarkAw", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8SrRySkyMJwiR_Vu_DKLZOCXkQZW0sUVck2NtEP4UgjCrHIHF65CU5iO3aOByoZoU6uDD4N5uuh5V0--RarkAw", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 215ms (Views: 214.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:15:08 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 185ms (Views: 184.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:15:10 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IlyjTUBgd8_e4mM03m0E9b-hOQsd70Ug3sTans-CaucR2gCDfvwFAGQrS_mjlQn5DJ0rAshEOt3V3hiUydDc7A", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IlyjTUBgd8_e4mM03m0E9b-hOQsd70Ug3sTans-CaucR2gCDfvwFAGQrS_mjlQn5DJ0rAshEOt3V3hiUydDc7A", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 195ms (Views: 193.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.0.97 at 2021-04-25 19:15:12 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb__2004101439576906657_70334758992640 at /home/paulo/GitHub/desafio-tecnico-ateliware/app/views/devise/registrations/new.html.erb:5)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 188ms (Views: 186.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.0.97 at 2021-04-25 19:15:13 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y-mP_ojE6SgCp3JAKyL7T1T0aX2FOzlE5vwx1G9smmvdYeGgaOSzDhp5FS-euLvjOsW73d1Vvx-JszQGQEVZng", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb__2004101439576906657_70334770488800 at /home/paulo/GitHub/desafio-tecnico-ateliware/app/views/devise/registrations/new.html.erb:5)
+  Rendered devise/shared/_error_messages.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 275ms (Views: 235.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for 10.0.0.97 at 2021-04-25 19:15:34 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb__2004101439576906657_70334773868920 at /home/paulo/GitHub/desafio-tecnico-ateliware/app/views/devise/registrations/new.html.erb:5)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 286ms (Views: 285.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.0.97 at 2021-04-25 19:15:36 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yPcQRwgfskm_zNdnDzIyAywO_g3cCaPwTuc69SeM6GP7cbOJNoPAhgUF_6pyyj8PnzLsBAmi3A1F_fj_Id5eaA", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb__2004101439576906657_70334766002160 at /home/paulo/GitHub/desafio-tecnico-ateliware/app/views/devise/registrations/new.html.erb:5)
+  Rendered devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 200ms (Views: 194.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for 10.0.0.97 at 2021-04-25 19:16:25 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 203ms (Views: 202.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.0.97 at 2021-04-25 19:16:28 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bfW2C3H-NFAFWq3y1HMvQHw1a3kTu5FahtFfbxuQ3CRecxXFT2JGn7-ThT-piyJMzwl5cMYQ7qeNy51lHcJqLw", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 201ms (Views: 195.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 10.0.0.97 at 2021-04-25 19:17:19 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1145.2ms)
+Completed 500 Internal Server Error in 1148ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_error_messages' for #<#<Class:0x00007ff02ca41ef0>:0x00007ff02df32dc8>
+Did you mean?  devise_error_messages!):
+    3: 	<div class="login-form-1">
+    4:         <%= form_for(resource, :html => {:class => "text-left"}, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    5:             
+    6: 			<% devise_error_messages.each do |name, msg| %>
+    7:                 <%= content_tag :div, msg, :id => "flash_#{name}", class: 'alert alert-danger', role: 'alert' %>
+    8:             <% end %>
+    9: 			<div class="login-form-main-message"></div>
+  
+app/views/devise/registrations/new.html.erb:6:in `block in _app_views_devise_registrations_new_html_erb__2004101439576906657_70334769891600'
+app/views/devise/registrations/new.html.erb:4:in `_app_views_devise_registrations_new_html_erb__2004101439576906657_70334769891600'
+Started GET "/users/sign_up" for 10.0.0.97 at 2021-04-25 19:17:27 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb__2004101439576906657_70334765810760 at /home/paulo/GitHub/desafio-tecnico-ateliware/app/views/devise/registrations/new.html.erb:5)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 215ms (Views: 214.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.0.97 at 2021-04-25 19:17:30 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YODV7Vb8Ep3388JmnsqoNmvVPUPN10nJLqVupT-gKWVTZnYjaGBgUk066qvjMqU62OkvShh8NjQlv6yvOfKfbg", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb__2004101439576906657_70334767489860 at /home/paulo/GitHub/desafio-tecnico-ateliware/app/views/devise/registrations/new.html.erb:5)
+  Rendered devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 198ms (Views: 192.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for 10.0.0.97 at 2021-04-25 19:18:16 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 193ms (Views: 192.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.0.97 at 2021-04-25 19:18:19 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bgSXC8LTRh1ZA9xXDO3IH2wzaxN0vt1Cqii6T6cc-qBdgjTF_E800uPK9JpxFcUT3w95GqEVor-hMnhFoU5Mqw", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 204ms (Views: 197.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for 10.0.0.97 at 2021-04-25 19:20:32 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 204ms (Views: 180.5ms | ActiveRecord: 10.5ms)
+
+
+Started POST "/users" for 10.0.0.97 at 2021-04-25 19:20:35 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ag0x-c_tdDBNVrPQOJRa3sYImy0ZQcTz8ClKzPDBl1Axi5I38XEG__efmx1FbFfSdTSJJMzquw77M4jG9pMhWw", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 197ms (Views: 190.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:21:03 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 205ms (Views: 203.8ms | ActiveRecord: 0.0ms)
+
+

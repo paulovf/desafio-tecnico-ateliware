@@ -4,7 +4,7 @@
 	<div class="login-form-1">
         <%= form_for(resource, :html => {:class => "text-left"}, as: resource_name, url: session_path(resource_name)) do |f| %>
             <% flash.each do |name, msg| %>
-                <%= content_tag :div, msg, :id => "flash_#{name}" %>
+                <%= content_tag :div, msg, :id => "flash_#{name}", class: 'alert alert-danger', role: 'alert' %>
             <% end %>
             <div class="login-form-main-message"></div>
 			<div class="main-login-form">
