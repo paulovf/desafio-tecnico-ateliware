@@ -6,9 +6,9 @@ RSpec.describe Repositorio, :type => :model do
             descricao: "teste",
             score: 0,
             data_criacao: DateTime.now,
-            curated: false,
-            featured: false,
-            private: false,
+            curated: [true, false],
+            featured: [true, false],
+            private: [true, false],
             forks: 0,
             url: 'teste')
     }

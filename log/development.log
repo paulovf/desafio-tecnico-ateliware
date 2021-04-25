@@ -10113,3 +10113,929 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 205ms (Views: 203.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.0.97 at 2021-04-25 19:35:25 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.6.6/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (403.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered index/index.html.erb within layouts/application (410.3ms)
+Completed 200 OK in 655ms (Views: 649.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.0.97 at 2021-04-25 19:35:30 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 282ms (Views: 264.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/get_list_repositories" for 10.0.0.97 at 2021-04-25 19:35:33 -0300
+Cannot render console from 10.0.0.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IndexController#get_list_repositories as */*
+  [1m[36mRepositorio Load (36.0ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.8ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.5ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.6ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.6ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.8ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.4ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.3ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[36mRepositorio Load (0.2ms)[0m  [1m[34mSELECT  "repositorios".* FROM "repositorios" WHERE "repositorios"."nome" = $1 LIMIT $2[0m  [["nome", "full_name"], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/index_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/index_controller.rb:42
+Completed 200 OK in 7394ms (Views: 150.0ms | ActiveRecord: 139.2ms)
+
+
