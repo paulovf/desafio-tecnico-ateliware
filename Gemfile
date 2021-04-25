@@ -46,11 +46,11 @@ gem 'jquery-rails'
 
 gem 'font-awesome-sass', '~> 5.15.1'
 
+gem 'carrierwave', '~> 0.9'
+
 gem 'jquery-ui-rails'
 
 gem 'jquery-validation-rails'
-
-gem 'devise', '~> 4.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
