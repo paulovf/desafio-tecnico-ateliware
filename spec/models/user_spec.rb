@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe User, :type => :model do
     subject {
         described_class.new(email: "teste@teste.com",
-            email_confirmation: "teste@teste.com",
             password: "123456")
     }
     it "is valid with valid attributes" do
@@ -11,10 +10,6 @@ RSpec.describe User, :type => :model do
     end
     it "is not valid without a email" do
         subject.email = nil
-        expect(subject).to_not be_valid
-    end
-    it "is not valid without a email_confirmation" do
-        subject.email_confirmation = nil
         expect(subject).to_not be_valid
     end
     it "is not valid without a password" do
