@@ -5,13 +5,13 @@ Um sistema responsável por listar os repositórios destaques das 5 principais l
 
 * Roby versão 2.6.6
 * Rails versão 5.2.5
-* PostgreSQL versão 10.16
+* PostgreSQL versão 9.5
 
 #### Pré-requisitos
 
 - Ruby 2.6.x
 - Rails 5.2.x
-- PostgreSQL 10.x
+- PostgreSQL 9.x
 
 #### Gems extras utilizadas
 
@@ -27,7 +27,7 @@ Um sistema responsável por listar os repositórios destaques das 5 principais l
 
 ### Lógica adotada
 Este sistema faz uma pesquisa na API do GitHub em busca dos 10 repositórios de maior destaque das 5 principais
-linguagens de programação existentes no mercado, que são:
+linguagens de programação WEB existentes no mercado, que são:
  - Node JS
  - Django
  - Ruby-on-Rails
@@ -42,7 +42,7 @@ os detalhes de cada repositório, de forma individual, clicando no nome do repos
 os detalhes de todos os repositórios de uma determinada linguagem, clicando no botão "Detalhes".
 
 Este sistema possuí uma rotina de login e de cadastro. Ao fazer login, você será redirecionado para a paǵina
-inicial (listagem dos repositórios destaques).
+inicial do sistema (listagem dos repositórios destaques).
 
 Este sistema está hospedado na plataforma de hospedagem de serviços Heroku. Clique [aqui](https://desafio-tecnico-ateliware.herokuapp.com/) para poder acessar este sistema no Heroku.
 
@@ -54,11 +54,13 @@ Este sistema está hospedado na plataforma de hospedagem de serviços Heroku. Cl
 ```
 bundle install
 ```
-5. Faça as migrações para o banco com o comando:
+5. No arquivo ```config/database.yml``` altere as configurações de conexão com seu banco de dados;
+
+6. Faça as migrações para o banco com o comando:
 ```
 rake db:migrate
 ```
-6. Execute a API com o comando 
+7. Execute a API com o comando 
 ```
 rails s
 ```
