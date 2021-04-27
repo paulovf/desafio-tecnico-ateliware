@@ -1,6 +1,7 @@
 let listaRepositorios = [];
 let listaIds = ["lista_node", "lista_django", "lista_rails", "lista_dotnet", "lista_php"];
 
+// Método que faz a busca dos repositórios, quando o botão buscar é clicado
 function buscaRepositorios(){
     $(".carregando").css("display", "flex");
     $.ajax({
@@ -39,6 +40,7 @@ function buscaRepositorios(){
     });
 }
 
+// Método que faz o preenchimento das listas
 function preencheListaRepositorios(){
     for(let i = 0; i < listaRepositorios.repositorios.length; i++){
         let obj = listaRepositorios.repositorios[i].linguagem;
@@ -53,6 +55,7 @@ function preencheListaRepositorios(){
     }
 }
 
+// Método que mostra os detalhes de cada linguagem
 function detalhes(linguagem, posicao){
     let indice = listaIds.indexOf(linguagem);
     let html = "";
