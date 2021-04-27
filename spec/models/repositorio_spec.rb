@@ -6,9 +6,6 @@ RSpec.describe Repositorio, :type => :model do
             descricao: "teste",
             score: 0,
             data_criacao: DateTime.now,
-            curated: [true, false],
-            featured: [true, false],
-            private: [true, false],
             forks: 0,
             url: 'teste')
     }
@@ -29,18 +26,6 @@ RSpec.describe Repositorio, :type => :model do
     end
     it "is not valid without a data_criacao" do
         subject.data_criacao = nil
-        expect(subject).to_not be_valid
-    end
-    it "is not valid without a curated" do
-        subject.curated = nil
-        expect(subject).to_not be_valid
-    end
-    it "is not valid without a featured" do
-        subject.featured = nil
-        expect(subject).to_not be_valid
-    end
-    it "is not valid without a private" do
-        subject.private = nil
         expect(subject).to_not be_valid
     end
     it "is not valid without a forks" do
