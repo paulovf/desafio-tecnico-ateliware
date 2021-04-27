@@ -26,7 +26,7 @@ Um sistema responsável por listar os repositórios destaques das 5 principais l
 - rspec-rails (Grupo development)
 
 ### Lógica adotada
-Este sistema faz uma pesquisa na API do GitHub em busca dos 30 repositórios de maior destaque das 5 principais
+Este sistema faz uma pesquisa na API do GitHub em busca dos 10 repositórios de maior destaque das 5 principais
 linguagens de programação existentes no mercado, que são:
  - Node JS
  - Django
@@ -37,7 +37,7 @@ linguagens de programação existentes no mercado, que são:
 Após a realização da busca, os dados destes repositórios são armazenados no banco de dados. O SGBD escolhido foi
 o PostgreSQL.
 
-Na página principal, é mostrada uma lista com os 30 repositórios destaques de cada linguagem. Você pdoerá verificar
+Na página principal, é mostrada uma lista com os 10 repositórios destaques de cada linguagem. Você pdoerá verificar
 os detalhes de cada repositório, de forma individual, clicando no nome do repositório na lista, ou poderá verificar
 os detalhes de todos os repositórios de uma determinada linguagem, clicando no botão "Detalhes".
 

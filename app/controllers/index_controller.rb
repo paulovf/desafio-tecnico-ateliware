@@ -7,6 +7,7 @@ class IndexController < ApplicationController
     USERNAME = 'paulovf'
     FRAMEWORKS = ['node', 'django', 'rails', 'dotnet', 'php']
     LINGUAGENS = ['node', 'python', 'ruby', 'dotnet', 'php']
+    LIMITE_REPOSITORIOS = 10
 
     # Método que renderiza a tela index
     def index
@@ -33,7 +34,8 @@ class IndexController < ApplicationController
     def criarRequisicao(ling, framework)
         # Esta URL faz uma pesquisa pelo framework e pela linguagem. Em alguns casos, os dois parâmetros podem
         # se repetir
-        url = URI.parse(URL + "?q=" + framework + "language%3A" + ling + "&type=Repositories")
+        url = URI.parse(URL + "?q=" + framework + "language%3A" + ling + 
+            "&type=Repositories&per_page=" + LIMITE_REPOSITORIOS.to_s)
         requisicao = Net::HTTP::Get.new(url.request_uri)
         requisicao["Accept"] = "Accept: application/vnd.github.mercy-preview+json"
         requisicao.set_form_data({'username'=>USERNAME, 'password'=>TOKEN_API_GITHUB})
