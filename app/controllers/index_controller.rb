@@ -5,30 +5,37 @@ class IndexController < ApplicationController
     URL = 'https://api.github.com/search/repositories'
     TOKEN_API_GITHUB = '$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'
     USERNAME = 'paulovf'
-    LINGUAGENS = ['node', 'django', 'rails', 'dotnet', 'php']
+    FRAMEWORKS = ['node', 'django', 'rails', 'dotnet', 'php']
+    LINGUAGENS = ['node', 'python', 'ruby', 'dotnet', 'php']
 
     def index
     end
     
     def get_list_repositories
         listResp = []
-        LINGUAGENS.each do |ling|
-            if ling == 'django'
-                url = URI.parse(URL + "?q=" + ling + "language%3Apython&type=Repositories")
-            else
-                url = URI.parse(URL + "?q=" + ling + "language%3A" + ling + "&type=Repositories")
-            end
-            req = Net::HTTP::Get.new(url.request_uri)
-            req["Accept"] = "Accept: application/vnd.github.mercy-preview+json"
-            req.set_form_data({'username'=>USERNAME, 'password'=>TOKEN_API_GITHUB})
-            http = Net::HTTP.new(url.host, url.port)
-            http.use_ssl = (url.scheme == "https")
-            response = http.request(req)
-            listaJson = ActiveSupport::JSON.decode(response.body.force_encoding("utf-8"))
-            listResp << {linguagem: listaJson}
+        index = 0
+        FRAMEWORKS.each do |framework|
+            requisicao, http = criarRequisicao(LINGUAGENS[index], framework)
+            listResp << {linguagem: getJsonList(http.request(requisicao))}
+            index = index + 1
         end
         salvar_objeto_repositorio_banco(listResp)
         render json: {'repositorios': listResp}, adapter: :json
+    end
+
+    def criarRequisicao(ling, framework)
+        url = URI.parse(URL + "?q=" + framework + "language%3A" + ling + "&type=Repositories")
+        requisicao = Net::HTTP::Get.new(url.request_uri)
+        requisicao["Accept"] = "Accept: application/vnd.github.mercy-preview+json"
+        requisicao.set_form_data({'username'=>USERNAME, 'password'=>TOKEN_API_GITHUB})
+
+        http = Net::HTTP.new(url.host, url.port)
+        http.use_ssl = (url.scheme == "https")
+        return requisicao, http
+    end
+
+    def getJsonList(response)
+        return ActiveSupport::JSON.decode(response.body.force_encoding("utf-8"))
     end
 
     def salvar_objeto_repositorio_banco(json)
