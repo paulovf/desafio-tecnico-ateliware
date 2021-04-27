@@ -48,7 +48,7 @@ function preencheListaRepositorios(){
         for(let r = 0; r < obj.items.length; r++){
             let subObj = obj.items[r];
             html += "<li>" +
-                "<label onclick=\"detalhes('" + listaIds[i] + "', " + r + ");\" class=\"item-lista-linguagens\">" + Array(subObj.full_name.split("/")).toString().replaceAll(",", " / ") + "</label>" +
+                "<label onclick=\"detalhes('" + listaIds[i] + "', " + r + ");\" class=\"item-lista-linguagens\"><i class=\"fas fa-plus-circle icone-detalhes-repositorio verde-claro\"></i>" + Array(subObj.full_name.split("/")).toString().replaceAll(",", " / ") + "</label>" +
             "</li>";
         }
         $("#" + listaIds[i]).html(html);
